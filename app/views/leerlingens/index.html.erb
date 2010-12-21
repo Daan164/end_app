@@ -1,0 +1,29 @@
+<h1>Listing leerlingens</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leerlingens.each do |leerlingen| %>
+  <tr>
+    <td><%= leerlingen.first_name %></td>
+    <td><%= leerlingen.last_name %></td>
+    <td><%= leerlingen.email %></td>
+    <td><%= leerlingen.password %></td>
+    <td><%= link_to 'Show', leerlingen %></td>
+    <td><%= link_to 'Edit', edit_leerlingen_path(leerlingen) %></td>
+    <td><%= link_to 'Destroy', leerlingen, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Leerlingen', new_leerlingen_path %>
