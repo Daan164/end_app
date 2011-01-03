@@ -1,0 +1,2 @@
+module Vak::StudentsHelper
+end
