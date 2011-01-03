@@ -1,4 +1,6 @@
 EndApp::Application.routes.draw do
+  resources :docents
+
   resources :students
 
   resources :users
