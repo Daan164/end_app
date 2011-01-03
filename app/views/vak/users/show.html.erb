@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name vak:</b>
+  <%= @vak_user.name_vak %>
+</p>
+
+<p>
+  <b>Name docent:</b>
+  <%= @vak_user.name_docent %>
+</p>
+
+
+<%= link_to 'Edit', edit_vak_user_path(@vak_user) %> |
+<%= link_to 'Back', vak_users_path %>
