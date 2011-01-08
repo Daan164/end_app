@@ -1,7 +1,5 @@
 EndApp::Application.routes.draw do
-  namespace :vak do resources :users end
-
-  namespace :vak do resources :students end
+  resources :aanwezighedens
 
   resources :vaks
 

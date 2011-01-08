@@ -1,2 +1,0 @@
-module Vak::UsersHelper
-end

@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>X aantal</th>
+    <th>Tot punten</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,7 +12,7 @@
 <% @vaks.each do |vak| %>
   <tr>
     <td><%= vak.name %></td>
-    <td><%= vak.X_aantal %></td>
+    <td><%= vak.tot_punten %></td>
     <td><%= link_to 'Show', vak %></td>
     <td><%= link_to 'Edit', edit_vak_path(vak) %></td>
     <td><%= link_to 'Destroy', vak, :confirm => 'Are you sure?', :method => :delete %></td>

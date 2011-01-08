@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  X_aantal: 1
+  tot_punten: MyString
 
 two:
   name: MyString
-  X_aantal: 1
+  tot_punten: MyString

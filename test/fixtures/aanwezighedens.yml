@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  student_name: MyString
+  aanwezig: MyString
+  vak: MyString
+  datum: 2011-01-08
+
+two:
+  student_name: MyString
+  aanwezig: MyString
+  vak: MyString
+  datum: 2011-01-08
