@@ -21,7 +21,10 @@
   </div>
   <div class="field">
     <%= f.label :aanwezig %><br />
-    <%= f.text_field :aanwezig %>
+    <%= f.radio_button :aanwezig, "ja" %>
+    <%= f.label :aanwezig, "ja" %>
+    <%= f.radio_button :aanwezig, "nee" %>
+    <%= f.label :aanwezig, "nee" %>
   </div>
   <div class="field">
     <%= f.label :datume %><br />

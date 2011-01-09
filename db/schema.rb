@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20110109103236) do
     t.string   "name_student"
     t.string   "vak"
     t.string   "aanwezig"
-    t.date     "datume"
+    t.date     "datum"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
