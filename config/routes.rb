@@ -1,8 +1,11 @@
 EndApp::Application.routes.draw do
+<<<<<<< HEAD
   resources :uvaks
 
   resources :svaks
 
+=======
+>>>>>>> b4d81c813c26db3b8ded80fd2078154530156c3a
   resources :aanwezighedens
 
   resources :vaks

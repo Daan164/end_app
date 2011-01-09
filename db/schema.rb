@@ -10,7 +10,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20110109123747) do
+=======
+ActiveRecord::Schema.define(:version => 20110108132918) do
+>>>>>>> b4d81c813c26db3b8ded80fd2078154530156c3a
 
   create_table "aanwezighedens", :force => true do |t|
     t.string   "student_name"
@@ -28,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20110109123747) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "svaks", :force => true do |t|
     t.string   "name_student"
     t.string   "name_vak"
@@ -36,6 +41,8 @@ ActiveRecord::Schema.define(:version => 20110109123747) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> b4d81c813c26db3b8ded80fd2078154530156c3a
   create_table "users", :force => true do |t|
     t.string   "first_name"
     t.string   "last_name"
@@ -45,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20110109123747) do
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
   create_table "uvaks", :force => true do |t|
     t.string   "name_user"
     t.string   "name_vak"
@@ -53,6 +61,8 @@ ActiveRecord::Schema.define(:version => 20110109123747) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> b4d81c813c26db3b8ded80fd2078154530156c3a
   create_table "vaks", :force => true do |t|
     t.string   "name"
     t.string   "tot_punten"
