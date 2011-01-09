@@ -1,0 +1,33 @@
+<%= form_for(@aanwezigheden) do |f| %>
+  <% if @aanwezigheden.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aanwezigheden.errors.count, "error") %> prohibited this aanwezigheden from being saved:</h2>
+
+      <ul>
+      <% @aanwezigheden.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_student %><br />
+    <%= f.text_field :name_student %>
+  </div>
+  <div class="field">
+    <%= f.label :vak %><br />
+    <%= f.text_field :vak %>
+  </div>
+  <div class="field">
+    <%= f.label :aanwezig %><br />
+    <%= f.text_field :aanwezig %>
+  </div>
+  <div class="field">
+    <%= f.label :datume %><br />
+    <%= f.date_select :datume %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

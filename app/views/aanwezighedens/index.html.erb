@@ -1,0 +1,29 @@
+<h1>Listing aanwezighedens</h1>
+
+<table>
+  <tr>
+    <th>Name student</th>
+    <th>Vak</th>
+    <th>Aanwezig</th>
+    <th>Datume</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @aanwezighedens.each do |aanwezigheden| %>
+  <tr>
+    <td><%= aanwezigheden.name_student %></td>
+    <td><%= aanwezigheden.vak %></td>
+    <td><%= aanwezigheden.aanwezig %></td>
+    <td><%= aanwezigheden.datume %></td>
+    <td><%= link_to 'Show', aanwezigheden %></td>
+    <td><%= link_to 'Edit', edit_aanwezigheden_path(aanwezigheden) %></td>
+    <td><%= link_to 'Destroy', aanwezigheden, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Aanwezigheden', new_aanwezigheden_path %>

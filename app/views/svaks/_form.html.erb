@@ -1,0 +1,29 @@
+<%= form_for(@svak) do |f| %>
+  <% if @svak.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@svak.errors.count, "error") %> prohibited this svak from being saved:</h2>
+
+      <ul>
+      <% @svak.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_vak %><br />
+    <%= f.text_field :name_vak %>
+  </div>
+  <div class="field">
+    <%= f.label :name_student %><br />
+    <%= f.text_field :name_student %>
+  </div>
+  <div class="field">
+    <%= f.label :aantal_punten %><br />
+    <%= f.text_field :aantal_punten %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
