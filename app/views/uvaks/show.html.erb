@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name vak:</b>
+  <%= @uvak.name_vak %>
+</p>
+
+<p>
+  <b>Name user:</b>
+  <%= @uvak.name_user %>
+</p>
+
+<p>
+  <b>Aantal uren:</b>
+  <%= @uvak.aantal_uren %>
+</p>
+
+
+<%= link_to 'Edit', edit_uvak_path(@uvak) %> |
+<%= link_to 'Back', uvaks_path %>

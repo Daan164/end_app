@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110109101807) do
+ActiveRecord::Schema.define(:version => 20110109103236) do
 
   create_table "aanwezighedens", :force => true do |t|
     t.string   "name_student"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(:version => 20110109101807) do
     t.string   "last_name"
     t.string   "email"
     t.string   "password"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "uvaks", :force => true do |t|
+    t.string   "name_vak"
+    t.string   "name_user"
+    t.string   "aantal_uren"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

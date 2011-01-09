@@ -1,4 +1,6 @@
 EndApp::Application.routes.draw do
+  resources :uvaks
+
   resources :svaks
 
   resources :aanwezighedens
