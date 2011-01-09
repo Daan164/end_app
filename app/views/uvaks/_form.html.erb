@@ -1,0 +1,29 @@
+<%= form_for(@uvak) do |f| %>
+  <% if @uvak.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@uvak.errors.count, "error") %> prohibited this uvak from being saved:</h2>
+
+      <ul>
+      <% @uvak.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name_user %><br />
+    <%= f.text_field :name_user %>
+  </div>
+  <div class="field">
+    <%= f.label :name_vak %><br />
+    <%= f.text_field :name_vak %>
+  </div>
+  <div class="field">
+    <%= f.label :aantal_uren %><br />
+    <%= f.text_field :aantal_uren %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

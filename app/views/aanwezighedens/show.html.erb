@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student name:</b>
+  <%= @aanwezigheden.student_name %>
+</p>
+
+<p>
+  <b>Aanwezig:</b>
+  <%= @aanwezigheden.aanwezig %>
+</p>
+
+<p>
+  <b>Vak:</b>
+  <%= @aanwezigheden.vak %>
+</p>
+
+<p>
+  <b>Datum:</b>
+  <%= @aanwezigheden.datum %>
+</p>
+
+
+<%= link_to 'Edit', edit_aanwezigheden_path(@aanwezigheden) %> |
+<%= link_to 'Back', aanwezighedens_path %>

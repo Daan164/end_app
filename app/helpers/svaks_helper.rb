@@ -1,0 +1,2 @@
+module SvaksHelper
+end

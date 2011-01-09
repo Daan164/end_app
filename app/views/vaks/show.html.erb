@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @vak.name %>
+</p>
+
+<p>
+  <b>Tot punten:</b>
+  <%= @vak.tot_punten %>
+</p>
+
+
+<%= link_to 'Edit', edit_vak_path(@vak) %> |
+<%= link_to 'Back', vaks_path %>

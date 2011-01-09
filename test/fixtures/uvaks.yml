@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_user: MyString
+  name_vak: MyString
+  aantal_uren: 1
+
+two:
+  name_user: MyString
+  name_vak: MyString
+  aantal_uren: 1

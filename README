@@ -1,0 +1,19 @@
+Welkom op mijn ruby on rails end_app
+
+Dit is een project voor het vak Web 3.0,
+het bestaat uit een user(docenten) tabel, student tabel, vak tabel, svak (student/vak) tabel, uvak (user/vak) en een aanwezigheden tabel.
+
+De user tabel is voor de gegevens van de docenten in te geven, veranderen of verwijderen.
+De student tabel is hetzelfde als de user tabel maar het is nu voor de gegevens voor de studenten.
+De vak tabel is waar de gegevens in komen voor een vak met o.a. de naam en de totaal aantal punten wat er voor dat vak te verdienen is.
+De svak tabel is voor de student per vak aan te geven, er is ook een veld voor het aantal punten wat deze student voor dat vak heeft verdient.
+De uvak tabel is voor de user of docent per vak aan te geven, er is ook een veld voor het aantal uren wat de docent geeft voor dat vak.
+De aanwezigheden tabel is voor de aanwezigheden op te nemen van de studenten.
+
+Wegens een fout met het duwen naar github is deze niet helemaal op to date!
+
+Amuseer u met het invullen van de echte/nep gegevens.
+
+Met vriendelijke groeten
+Web developer
+Daan

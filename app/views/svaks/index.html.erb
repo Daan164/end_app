@@ -1,0 +1,27 @@
+<h1>Listing svaks</h1>
+
+<table>
+  <tr>
+    <th>Name student</th>
+    <th>Name vak</th>
+    <th>Aantal punten</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @svaks.each do |svak| %>
+  <tr>
+    <td><%= svak.name_student %></td>
+    <td><%= svak.name_vak %></td>
+    <td><%= svak.aantal_punten %></td>
+    <td><%= link_to 'Show', svak %></td>
+    <td><%= link_to 'Edit', edit_svak_path(svak) %></td>
+    <td><%= link_to 'Destroy', svak, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Svak', new_svak_path %>

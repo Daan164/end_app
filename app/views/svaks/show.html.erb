@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name student:</b>
+  <%= @svak.name_student %>
+</p>
+
+<p>
+  <b>Name vak:</b>
+  <%= @svak.name_vak %>
+</p>
+
+<p>
+  <b>Aantal punten:</b>
+  <%= @svak.aantal_punten %>
+</p>
+
+
+<%= link_to 'Edit', edit_svak_path(@svak) %> |
+<%= link_to 'Back', svaks_path %>
